@@ -4,19 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="email=no,telephone=no,address=no" />
-    <title>Document</title>
-    <meta name="description" content="" />
-    <link rel="icon" href="/favicon.ico" />
-
-    <meta property="og:url" content="https://" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:locale" content="ja_JP" />
+    <title>KAGU</title>
 
     <!-- viewport extraの読み込み -->
     <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
@@ -32,12 +20,13 @@
     <script
       src="https://kit.fontawesome.com/dd74283033.js"
       crossorigin="anonymous"
-		></script>
+    ></script>
 
-		<!-- google fontの読み込み -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500&family=Quicksand:wght@500;700&display=swap"
-			rel="stylesheet">
+    <!-- google fontの読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- object-fit-imagesの読み込み -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
@@ -47,8 +36,227 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
+    <header class="header">
+      <h1 class="header__logo">
+        <img src="img/logo.svg" alt="KAGU" />
+      </h1>
+      <div class="header__nav">
+        <div class="hamburgerButton"></div>
+        <nav class="globalNav">
+          <ul class="globalNav__list">
+            <li class="globalNav__item">
+              <a href="#"><img src="img/logo.svg" alt="KAGU" /></a>
+            </li>
+            <li class="globalNav__item"><a href="#">取扱い家具</a></li>
+            <li class="globalNav__item"><a href="#">販売店・展示場一覧</a></li>
+            <li class="globalNav__item"><a href="#">採用情報</a></li>
+            <li class="globalNav__item"><a href="#">お知らせ</a></li>
+            <li class="globalNav__item --store">
+              <a href="#"
+                ><img src="img/icon-store.svg" alt="" />online store</a
+              >
+            </li>
+            <li class="globalNav__item --mail">
+              <a href="#"><img src="img/icon-mail.svg" alt="" />お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="mv">
+        <ul class="mv__list">
+          <li class="mv__item"></li>
+          <li class="mv__item"></li>
+          <li class="mv__item"></li>
+        </ul>
+        <p class="mv-catch">自分らしさを<br />レイアウトする</p>
+      </div>
+      <section class="news">
+        <div class="news__container">
+          <h2 class="u-title">お知らせ</h2>
+          <p class="u-subtitle">news</p>
+          <ul class="news__list">
+            <li class="news-item">
+              <span class="news-item__date">2020.01.28</span>
+              <span class="news-item__tag">ニュースリリース</span>
+              <p class="news-item__title">
+                「KAGU FANTASIA」が2020年X月XX日（月）東京・原宿にオープン
+              </p>
+            </li>
+            <li class="news-item">
+              <span class="news-item__date">2020.01.12 </span>
+              <span class="news-item__tag">ニュースリリース</span>
+              <p class="news-item__title">新春キャンペーンを実施</p>
+            </li>
+            <li class="news-item">
+              <span class="news-item__date">2019.12.26 </span>
+              <span class="news-item__tag">お知らせ</span>
+              <p class="news-item__title">年末年始の営業日についてのお知らせ</p>
+            </li>
+            <li class="news-item">
+              <span class="news-item__date">2019.11.09</span>
+              <span class="news-item__tag">2019.11.09</span>
+              <p class="news-item__title">
+                人気ライフスタイル雑誌『KAGUGU』とのコラボ商品が登場
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="news__button u-button">お知らせ一覧へ</a>
+        </div>
+      </section>
+      <section class="furniture">
+        <h2 class="u-title">取り扱い家具</h2>
+        <p class="u-subtitle">furniture</p>
+        <ul class="furniture__list">
+          <li class="furniture-item">
+            <img
+              class="furniture-item__img"
+              src="img/img_furniture_01.jpg"
+              alt=""
+            />
+            <div class="furniture-item__container">
+              <h3 class="furniture-item__title">テーマで探す</h3>
+              <p class="furniture-item__text">
+                モダン、ナチュラル、北欧、ヴィンテージ、和風、ハワイアン、アメリカン、ミニマルなど、テーマごとに家具をお探しいただけます。
+              </p>
+              <a href="#" class="furniture__button u-button"
+                >取扱い家具の一覧へ</a
+              >
+            </div>
+          </li>
+          <li class="furniture-item">
+            <img
+              class="furniture-item__img"
+              src="img/img_furniture_02.jpg"
+              alt=""
+            />
+            <div class="furniture-item__container">
+              <h3 class="furniture-item__title">カラーで探す</h3>
+              <p class="furniture-item__text">
+                レッド、ブルー、グリーン、イエロー、オレンジ、ピンク、パープル、ベージュ・アイボリー、ブラウン、ブラック、グレー、ホワイトなど、好みのカラーごとに家具をお探しいただけます。
+              </p>
+              <a href="#" class="furniture__button u-button"
+                >取扱い家具の一覧へ</a
+              >
+            </div>
+          </li>
+          <li class="furniture-item">
+            <img
+              class="furniture-item__img"
+              src="img/img_furniture_03.jpg"
+              alt=""
+            />
+            <div class="furniture-item__container">
+              <h3 class="furniture-item__title">シーンで探す</h3>
+              <p class="furniture-item__text">
+                「リビング」や「ダイニング」、「寝室・ベッドルーム」、「キッチン」、「玄関・エントランス」、「書斎・ホームオフィス」などのシーンから、それぞれのシーンで使用する家具をお探しいただけます。
+              </p>
+              <a href="#" class="furniture__button u-button"
+                >取扱い家具の一覧へ</a
+              >
+            </div>
+          </li>
+          <li class="furniture-item">
+            <img
+              class="furniture-item__img"
+              src="img/img_furniture_04.jpg"
+              alt=""
+            />
+            <div class="furniture-item__container">
+              <h3 class="furniture-item__title">ブランドで探す</h3>
+              <p class="furniture-item__text">
+                他では出会えないソファやチェアが見つかります。<br />
+                当社ブランド以外でも、セレクトラインアップの中で多数のブランドをお取扱いしております。
+              </p>
+              <a href="#" class="furniture__button u-button"
+                >取扱い家具の一覧へ</a
+              >
+            </div>
+          </li>
+          <li class="furniture-item">
+            <img
+              class="furniture-item__img"
+              src="img/img_furniture_05.jpg"
+              alt=""
+            />
+            <div class="furniture-item__container">
+              <h3 class="furniture-item__title">素材で探す</h3>
+              <p class="furniture-item__text">
+                チークやパイン、マホガニーやウォールナットなどの木材から、ファブリックやラタンなどの布・繊維、ステンレスやロートアイアンのような金属まで、あらゆる素材を使用した家具を取り揃えております。
+              </p>
+              <a href="#" class="furniture__button u-button"
+                >取扱い家具の一覧へ</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="other">
+        <div class="other__content">
+          <img src="img/img_store.jpg" alt="" class="other__img" />
+          <div class="other__info">
+            <h2 class="other__title">販売店・展示場一覧</h2>
+            <p class="other__text">
+              KAGUの販売店をご覧いただけます。
+              また、KAGUの家具は全国のショールームにてご覧いただけます。
+            </p>
+            <a href="#" class="other__link"
+              >販売店・展示場一覧を見る<img src="img/icon-arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="other__content">
+          <img src="img/img_online.png" alt="" class="other__img" />
+          <div class="other__info">
+            <h2 class="other__title">online store</h2>
+            <p class="other__text">
+              KAGUの家具はオンラインストアでもご購入いただけます。
+            </p>
+            <a href="#" class="other__link"
+              >オンラインストアを見る<img src="img/icon-arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="recruit">
+        <h2 class="recruit__title">採用情報</h2>
+        <p class="recruit__subtitle">recruit</p>
+        <p class="recruit-text">
+          KAGUの新卒・中途採用情報を掲載しております。<br />
+          アルバイト情報についても掲載しております。
+        </p>
+        <a href="#" class="recruit__button">採用情報一覧へ</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <img src="img/logo-white.svg" alt="KAGU" />
+        <p class="footer__address">
+          株式会社KAGU<br />
+          愛知県名古屋市〇〇区〇〇町 XX-X
+        </p>
+        <p class="footer__tel"><span>TEL.</span> 052-000-0000</p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="#">取扱い家具<img src="img/icon-arrow.svg" alt=""></a></li>
+          <li class="footer-nav__item">
+						<p>販売店・展示場一覧</p>
+						<ul class="footer-nav__childeList">
+							<li class="footer-nav__chileItem"><a href="#">販売店一覧</a></li>
+							<li class="footer-nav__chileItem"><a href="#">展示場一覧</a></li>
+						</ul>
+					</li>
+          <li class="footer-nav__item"><a href="#">採用情報<img src="img/icon-arrow.svg" alt=""></a></li>
+          <li class="footer-nav__item"><a href="#">お知らせ<img src="img/icon-arrow.svg" alt=""></a></li>
+          <li class="footer-nav__item"><a href="#">お問い合わせ<img src="img/icon-arrow.svg" alt=""></a></li>
+        </ul>
+      </nav>
+      <a href="#" class="footer_privacyPolicy">プライバシーポリシー</a>
+      <small class="footer__copyright">© 2020 KAGU inc.</small>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
