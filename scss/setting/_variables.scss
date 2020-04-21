@@ -1,16 +1,25 @@
 //  ブレイクポイント
 $breakpoints: (
-	xs: 375px,
 	s: 560px,
-	m: 768px,
-	l: 960px,
-	xl: 1200px,
+	m: 960px,
+	l: 1024px,
+	xl: 1500px,
 );
 
 // 配色
+$color-white1: #fcfcfc;
+$color-white2: #fff;
+$color-black: #333;
+$color-main: #f7f6f5;
+$color-accent: #24a2b3;
+$color-sub: #aa8f7b;
+$color-footer-bg: #292929;
+$color-footer-line: #555;
 
 
 // font-family
-
+$font-en: 'Quicksand';
+$font-jp-main: 'Noto Sans JP';
+$font-jp-sub: 'Noto Serif JP';
 
 // 絶対値指定
