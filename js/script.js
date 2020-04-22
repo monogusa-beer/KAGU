@@ -15,6 +15,12 @@ $(function () {
 		});
 	});
 
+	// ナビゲーションのリンクをクリックしたらナビゲーションを隠す
+	$(".js-globalNav__item > a").click(function () {
+		$("body").removeClass("is-navActive");
+		$(".js-hamburgerButton").attr("aria-expanded", false);
+	});
+
 	// mv__listをslick化
 	$('.js-mv__list').slick({
 		adaptiveHeight: true,
