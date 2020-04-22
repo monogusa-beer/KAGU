@@ -15,9 +15,9 @@
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     &.--logo {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     &.--store,
     &.--mail {
@@ -39,7 +39,8 @@
       }
     }
     &.--store {
-      background-color: $color-accent;
+			background-color: $color-accent;
+			margin-bottom: 10px;
     }
     &.--mail {
       background-color: $color-sub;
