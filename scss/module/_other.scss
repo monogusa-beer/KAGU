@@ -1,0 +1,29 @@
+.other {
+  padding: 40px 20px 0;
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-family: $font-jp-main, $font-en, "Helvetica Neue", Arial,
+      "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 20px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 35px;
+  }
+  &__link {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    img {
+      margin-left: 8px;
+    }
+  }
+}

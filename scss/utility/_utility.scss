@@ -4,6 +4,13 @@
   letter-spacing: 0.15em;
 }
 
+.u-subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-sub;
+  text-transform: uppercase;
+}
+
 .u-button {
   display: block;
   width: 220px;
@@ -14,11 +21,4 @@
   letter-spacing: 0.1em;
   font-weight: bold;
   line-height: 50px;
-}
-
-.u-subtitle {
-  font-size: 14px;
-  font-weight: bold;
-  color: $color-sub;
-  text-transform: uppercase;
 }

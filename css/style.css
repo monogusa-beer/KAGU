@@ -545,10 +545,87 @@ a:focus {
   line-height: 1.8;
 }
 
+.furniture {
+  padding: 36px 20px 0;
+}
+
+.furniture__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.furniture__subtitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.furniture-item__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.furniture-item__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.furniture-item__text {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.furniture-item__button {
+  margin: 0 auto 60px;
+}
+
+.other {
+  padding: 40px 20px 0;
+}
+
+.other__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.other__title {
+  font-family: "Noto Sans JP", "Quicksand", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 20px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+
+.other__text {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 35px;
+}
+
+.other__link {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.other__link img {
+  margin-left: 8px;
+}
+
 .u-title {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.15em;
+}
+
+.u-subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #aa8f7b;
+  text-transform: uppercase;
 }
 
 .u-button {
@@ -561,12 +638,5 @@ a:focus {
   letter-spacing: 0.1em;
   font-weight: bold;
   line-height: 50px;
-}
-
-.u-subtitle {
-  font-size: 14px;
-  font-weight: bold;
-  color: #aa8f7b;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
