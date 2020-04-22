@@ -1,7 +1,4 @@
 $(function () {
-	//  object-fit-imagesを呼び出し
-	objectFitImages();
-
 	// ハンバーガーメニュー
 	$(function () {
 		$('.js-hamburgerButton').click(function () {

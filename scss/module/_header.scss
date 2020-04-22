@@ -11,7 +11,21 @@
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 0 10px rgba(#000, 0.03);
+	@include mq(m) {
+		height: 80px;
+		padding: 0 0 0 40px;
+	}
 	&__logo img {
 		width: 109px;
+		@include mq(m) {
+			width: 145px;
+		}
+	}
+	&__nav {
+		@include mq(l) {
+			width: 100%;
+			max-width: 880px;
+			margin-left: 30px;
+		}
 	}
 }

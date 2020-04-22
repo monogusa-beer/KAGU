@@ -10,15 +10,41 @@
   align-items: center;
   justify-content: center;
   transform: translateX(100%);
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	@include mq(l) {
+		width: auto;
+		height: auto;
+		position: static;
+		transform: none;
+		display: block;
+		background-color: transparent;
+	}
+	&__list {
+		@include mq(l) {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
   &__item {
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
+		margin-bottom: 30px;
+		@include mq(l) {
+			height: 80px;
+			margin-bottom: 0;
+			line-height: 80px;
+			margin-right: 20px;
+		}
+		@include mq(ll) {
+			margin-right: 40px;
+		}
     &.--logo {
-      margin-bottom: 40px;
-    }
+			margin-bottom: 40px;
+			@include mq(l) {
+				display: none;
+			}
+		}
     &.--store,
     &.--mail {
       width: 200px;
@@ -26,7 +52,11 @@
       line-height: 40px;
       padding: 0 20px;
       text-align: left;
-      color: $color-white1;
+			color: $color-white1;
+			@include mq(l) {
+				height: 80px;
+				margin-right: 0;
+			}
       a {
 				display: flex;
 				align-items: center;
@@ -41,9 +71,16 @@
     &.--store {
 			background-color: $color-accent;
 			margin-bottom: 10px;
+			@include mq(l) {
+				width: 195px;
+				margin-bottom: 0;
+			}
     }
     &.--mail {
-      background-color: $color-sub;
+			background-color: $color-sub;
+			@include mq(l) {
+				width: 175px;
+			}
     }
   }
 }

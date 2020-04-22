@@ -1,5 +1,11 @@
 .furniture {
 	padding: 36px 20px 0;
+	@include mq(s) {
+		padding: 36px 40px 0;
+	}
+	@include mq(m) {
+		padding: 80px 40px 0;
+	}
 	&__title {
 		text-align: center;
 		margin-bottom: 16px;
@@ -7,6 +13,17 @@
 	&__subtitle {
 		text-align: center;
 		margin-bottom: 60px;
+	}
+	&__list {
+		@include mq(s) {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		@include mq(m) {
+			max-width: 1280px;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -28,5 +45,41 @@
 	}
 	&__button {
 		margin: 0 auto 60px;
+		@include mq(m) {
+			margin-bottom: 100px;
+		}
+	}
+	@include mq(s) {
+		width: 47%;
+	}
+	@include mq(m) {
+		width: 29%;
+		&:first-of-type,
+		&:nth-of-type(2) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 80px;
+			.furniture-item__img {
+				width: 47%;
+				margin-bottom: 0;
+			}
+			.furniture-item__container {
+				width: 47%;
+			}
+			.furniture-item__title {
+				margin-bottom: 40px;
+			}
+			.furniture-item__text {
+				margin-bottom: 60px;
+			}
+			.furniture-item__button {
+				margin-bottom: 0;
+			}
+		}
+		&:nth-of-type(2) {
+			flex-direction: row-reverse;
+		}
 	}
 }

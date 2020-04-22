@@ -4,6 +4,11 @@
 	background-position: center;
 	color: $color-white2;
 	text-align: center;
+	@include mq(m) {
+		padding: 80px 40px;
+		max-width: 1500px;
+		margin: 0 auto;
+	}
 	&__title {
 		font-size: 20px;
 		letter-spacing: 0.15em;
@@ -19,6 +24,9 @@
 		line-height: 2;
 		letter-spacing: 0.2em;
 		margin-bottom: 30px;
+		@include mq(m) {
+			margin-bottom: 60px;
+		}
 	}
 	&__button {
 		display: block;
