@@ -615,6 +615,143 @@ a:focus {
   margin-left: 8px;
 }
 
+.recruit {
+  padding: 40px 20px;
+  background-image: url(../img/bg_recruit.jpg);
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.recruit__title {
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  margin-bottom: 15px;
+}
+
+.recruit__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.recruit__text {
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+
+.recruit__button {
+  display: block;
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  border: solid 1px #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: #292929;
+  color: #fff;
+}
+
+.footer__info {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 109px;
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.footer__tel {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer__tel span {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__privacyPolicy {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-nav__item {
+  width: 100%;
+  border-bottom: 1px solid #555;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-nav__item:first-of-type {
+  border-top: 1px solid #555;
+}
+
+.footer-nav__item:not(.--parent) a {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-nav__parentTitle {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-nav__parentTitle:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.footer-nav__childItem {
+  font-size: 13px;
+}
+
+.footer-nav__childItem:not(:last-of-type) {
+  margin-bottom: 21px;
+}
+
 .u-title {
   font-size: 20px;
   font-weight: 500;

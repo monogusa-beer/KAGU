@@ -6,6 +6,7 @@ $(function () {
 	$('.js-mv__list').slick({
 		adaptiveHeight: true,
 		autoplay: true,
+		arrows: false,
 		dots: true,
 		dotsClass: 'mv__dots'
 	});

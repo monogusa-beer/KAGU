@@ -223,7 +223,7 @@
       <section class="recruit">
         <h2 class="recruit__title">採用情報</h2>
         <p class="recruit__subtitle">recruit</p>
-        <p class="recruit-text">
+        <p class="recruit__text">
           KAGUの新卒・中途採用情報を掲載しております。<br />
           アルバイト情報についても掲載しております。
         </p>
@@ -232,7 +232,7 @@
     </main>
     <footer class="footer">
       <div class="footer__info">
-        <img src="img/logo-white.svg" alt="KAGU" />
+        <img class="footer__logo" src="img/logo-white.svg" alt="KAGU" />
         <p class="footer__address">
           株式会社KAGU<br />
           愛知県名古屋市〇〇区〇〇町 XX-X
@@ -241,20 +241,20 @@
       </div>
       <nav class="footer__nav">
         <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#">取扱い家具<img src="img/icon-arrow.svg" alt=""></a></li>
-          <li class="footer-nav__item">
-						<p>販売店・展示場一覧</p>
-						<ul class="footer-nav__childeList">
-							<li class="footer-nav__chileItem"><a href="#">販売店一覧</a></li>
-							<li class="footer-nav__chileItem"><a href="#">展示場一覧</a></li>
+          <li class="footer-nav__item"><a href="#">取扱い家具<img src="img/icon-arrow-white.svg" alt=""></a></li>
+          <li class="footer-nav__item --parent">
+						<p class="footer-nav__parentTitle">販売店・展示場一覧</p>
+						<ul class="footer-nav__childList">
+							<li class="footer-nav__childItem"><a href="#">販売店一覧</a></li>
+							<li class="footer-nav__childItem"><a href="#">展示場一覧</a></li>
 						</ul>
 					</li>
-          <li class="footer-nav__item"><a href="#">採用情報<img src="img/icon-arrow.svg" alt=""></a></li>
-          <li class="footer-nav__item"><a href="#">お知らせ<img src="img/icon-arrow.svg" alt=""></a></li>
-          <li class="footer-nav__item"><a href="#">お問い合わせ<img src="img/icon-arrow.svg" alt=""></a></li>
+          <li class="footer-nav__item"><a href="#">採用情報<img src="img/icon-arrow-white.svg" alt=""></a></li>
+          <li class="footer-nav__item"><a href="#">お知らせ<img src="img/icon-arrow-white.svg" alt=""></a></li>
+          <li class="footer-nav__item"><a href="#">お問い合わせ<img src="img/icon-arrow-white.svg" alt=""></a></li>
         </ul>
       </nav>
-      <a href="#" class="footer_privacyPolicy">プライバシーポリシー</a>
+      <a href="#" class="footer__privacyPolicy">プライバシーポリシー</a>
       <small class="footer__copyright">© 2020 KAGU inc.</small>
 		</footer>
     <script src="js/slick.js"></script>
