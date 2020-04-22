@@ -10,6 +10,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: 0 0 10px rgba(#000, 0.03);
 	&__logo img {
 		width: 109px;
 	}

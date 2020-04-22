@@ -426,6 +426,8 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
 }
 
 .header__logo img {
