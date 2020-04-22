@@ -1,21 +1,22 @@
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: $font-en, "Helvetica Neue", Arial, $font-jp-main, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-	overflow-x: hidden;
-	line-height: 2;
-	letter-spacing: 0.05em;
+  font-family: $font-en, "Helvetica Neue", Arial, $font-jp-main,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.05em;
+  color: $color-black;
 }
 
 a {
-	transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 a:hover,
 a:focus {
-	opacity: 0.8;
+  opacity: 0.8;
 }
