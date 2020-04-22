@@ -42,10 +42,21 @@
         <img src="img/logo.svg" alt="KAGU" />
       </h1>
       <div class="header__nav">
-        <div class="hamburgerButton"></div>
-        <nav class="globalNav">
+        <button
+          type="button"
+          class="js-hamburgerButton hamburgerButton"
+          aria-controls="globalNav"
+          aria-expanded="false"
+        >
+          <span class="hamburgerButton__line">
+            <span class="u-visuallyHidden">
+              メニューを開閉する
+            </span>
+          </span>
+        </button>
+        <nav id="globalNav" class="js-globalNav globalNav">
           <ul class="globalNav__list">
-            <li class="globalNav__item">
+            <li class="globalNav__item --logo">
               <a href="#"><img src="img/logo.svg" alt="KAGU" /></a>
             </li>
             <li class="globalNav__item"><a href="#">取扱い家具</a></li>
@@ -54,11 +65,11 @@
             <li class="globalNav__item"><a href="#">お知らせ</a></li>
             <li class="globalNav__item --store">
               <a href="#"
-                ><img src="img/icon-store.svg" alt="" />online store</a
+                ><img src="img/icon-store.svg" alt="" /><span>online store</spa></a
               >
             </li>
             <li class="globalNav__item --mail">
-              <a href="#"><img src="img/icon-mail.svg" alt="" />お問い合わせ</a>
+              <a href="#"><img src="img/icon-mail.svg" alt="" /><span>お問い合わせ</spa></a>
             </li>
           </ul>
         </nav>
@@ -82,24 +93,32 @@
               <span class="news-item__date">2020.01.28</span>
               <span class="news-item__tag">ニュースリリース</span>
               <p class="news-item__title">
-                「<a href="#">KAGU FANTASIA」が2020年X月XX日（月）東京・原宿にオープン</a>
+                「<a href="#"
+                  >KAGU FANTASIA」が2020年X月XX日（月）東京・原宿にオープン</a
+                >
               </p>
             </li>
             <li class="news-item">
               <span class="news-item__date">2020.01.12 </span>
               <span class="news-item__tag">ニュースリリース</span>
-              <p class="news-item__title"><a href="#">新春キャンペーンを実施</a></p>
+              <p class="news-item__title">
+                <a href="#">新春キャンペーンを実施</a>
+              </p>
             </li>
             <li class="news-item">
               <span class="news-item__date">2019.12.26 </span>
               <span class="news-item__tag">お知らせ</span>
-              <p class="news-item__title"><a href="#">年末年始の営業日についてのお知らせ</a></p>
+              <p class="news-item__title">
+                <a href="#">年末年始の営業日についてのお知らせ</a>
+              </p>
             </li>
             <li class="news-item">
               <span class="news-item__date">2019.11.09</span>
               <span class="news-item__tag">ニュースリリース</span>
               <p class="news-item__title">
-                <a href="#">人気ライフスタイル雑誌『KAGUGU』とのコラボ商品が登場</a>
+                <a href="#"
+                  >人気ライフスタイル雑誌『KAGUGU』とのコラボ商品が登場</a
+                >
               </p>
             </li>
           </ul>
@@ -241,22 +260,38 @@
       </div>
       <nav class="footer__nav">
         <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#">取扱い家具<img src="img/icon-arrow-white.svg" alt=""></a></li>
+          <li class="footer-nav__item">
+            <a href="#"
+              >取扱い家具<img src="img/icon-arrow-white.svg" alt=""
+            /></a>
+          </li>
           <li class="footer-nav__item --parent">
-						<p class="footer-nav__parentTitle">販売店・展示場一覧</p>
-						<ul class="footer-nav__childList">
-							<li class="footer-nav__childItem"><a href="#">販売店一覧</a></li>
-							<li class="footer-nav__childItem"><a href="#">展示場一覧</a></li>
-						</ul>
-					</li>
-          <li class="footer-nav__item"><a href="#">採用情報<img src="img/icon-arrow-white.svg" alt=""></a></li>
-          <li class="footer-nav__item"><a href="#">お知らせ<img src="img/icon-arrow-white.svg" alt=""></a></li>
-          <li class="footer-nav__item"><a href="#">お問い合わせ<img src="img/icon-arrow-white.svg" alt=""></a></li>
+            <p class="footer-nav__parentTitle">販売店・展示場一覧</p>
+            <ul class="footer-nav__childList">
+              <li class="footer-nav__childItem"><a href="#">販売店一覧</a></li>
+              <li class="footer-nav__childItem"><a href="#">展示場一覧</a></li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#"
+              >採用情報<img src="img/icon-arrow-white.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#"
+              >お知らせ<img src="img/icon-arrow-white.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#"
+              >お問い合わせ<img src="img/icon-arrow-white.svg" alt=""
+            /></a>
+          </li>
         </ul>
       </nav>
       <a href="#" class="footer__privacyPolicy">プライバシーポリシー</a>
       <small class="footer__copyright">© 2020 KAGU inc.</small>
-		</footer>
+    </footer>
     <script src="js/slick.js"></script>
     <!-- <script src="js/slick.min.js"></script> -->
     <script src="js/script.js"></script>
