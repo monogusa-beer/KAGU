@@ -2,12 +2,16 @@
 
 @import "setting/variables";
 
+@import "plugin/slick";
+@import "plugin/slick-theme";
+
 @import "mixin/mixin";
 
 @import "base/reset";
 @import "base/base";
 
 @import "module/header";
+@import "module/mv";
 @import "module/footer";
 
 @import "utility/utility";
