@@ -27,5 +27,19 @@ $(function () {
 		dotsClass: 'mv__dots'
 	});
 
+	var mediaQuery = matchMedia('(max-width: 959px)');
+	// ページが読み込まれた時に実行
+	handle(mediaQuery);
+	// ウィンドウサイズが変更されても実行されるように
+	mediaQuery.addListener(handle);
 
+	function handle(mq) {
+		if (mq.matches) {
+			// ウィンドウサイズが959px以下のとき
+			$('.js-footer-nav-parent').click(function () {
+				$('.js-footer-nav__childList').slideToggle();
+				$('body').toggleClass('footer-nav-active');
+			});
+		}
+	}
 });
