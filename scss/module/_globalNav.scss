@@ -35,9 +35,15 @@
 			margin-bottom: 0;
 			line-height: 80px;
 			margin-right: 20px;
+			@media print {
+				margin: 0;
+			}
 		}
 		@include mq(ll) {
 			margin-right: 40px;
+			@media print {
+				margin-right: 20px;
+			}
 		}
     &.--logo {
 			margin-bottom: 40px;

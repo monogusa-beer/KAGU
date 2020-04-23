@@ -438,6 +438,12 @@ a:focus {
   }
 }
 
+@media print {
+  .header {
+    position: static;
+  }
+}
+
 .header__logo img {
   width: 109px;
 }
@@ -518,9 +524,21 @@ a:focus {
   }
 }
 
+@media print {
+  .globalNav__item {
+    margin: 0;
+  }
+}
+
 @media print, screen and (min-width: 1200px) {
   .globalNav__item {
     margin-right: 40px;
+  }
+}
+
+@media print {
+  .globalNav__item {
+    margin-right: 20px;
   }
 }
 

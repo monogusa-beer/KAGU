@@ -15,6 +15,9 @@
 		height: 80px;
 		padding: 0 0 0 40px;
 	}
+	@media print {
+		position: static;
+	}
 	&__logo img {
 		width: 109px;
 		@include mq(m) {
